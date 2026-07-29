@@ -25,6 +25,8 @@ On successful completion, a resource should show:
 
 Cost-Aware Design and Business and ROI Fluency default to Mid tier in the map; this project is one of the few places they get direct, repeated practice rather than a single pass. Portfolio Projects and Resume, LinkedIn, and Upwork Readiness default to Junior in the map and are trained here as a concrete deliverable (Phase 4) rather than only the parallel Definition of Done line other projects use.
 
+**Standardization note:** `examples/worked-example-loandesk/` is a complete, finished reference engagement (a filled-in `compilation.md` plus its matching `mockup.html`), added so every resource produces artifacts of comparable structure and depth without needing five different interpretations of "SRS" or "design section." When reviewing a resource's own seven engagements, compare their shape and rigor against this reference, not their wording. If a resource's `compilation.md` sections are consistently thinner or shallower than the worked example (for example, a feasibility number with no reasoning shown, or a domain rule that was simply restated from the brief rather than surfaced), that is a concrete, defensible basis for a decimal variant assignment rather than a subjective call.
+
 ## Definition of Done
 
 - [ ] Each engagement's mockup is genuinely clickable through its core flow, opening with nothing more than a browser, no live hosting involved

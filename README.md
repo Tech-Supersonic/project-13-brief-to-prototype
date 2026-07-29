@@ -7,21 +7,23 @@
 | Tier | Mid |
 | Deadline | 10 working days (2 weeks) from your start date |
 | Status | Active |
-| Tags | Requirements Analysis, Feasibility and Cost Estimation, SRS, System Design, Database Design, Sequence Diagrams, AI-Assisted Mockup Building, Client Presentation, Interview Readiness, Portfolio Packaging, Resume and LinkedIn Writing |
+| Tags | Requirements Analysis, Feasibility, SRS, System and Database Design, AI-Built Prototypes, Client Presentation, Interview Readiness, Portfolio Packaging |
 
 ---
 
 ## Overview
 
-You are running seven short client engagements, one after another, each for a different company in a different industry. Each engagement gives you a real business problem. You are responsible for the entire lifecycle of the response: figuring out whether the idea is even worth building, writing the requirements, designing the system and the database, building a working mockup with an AI coding agent doing the typing, checking it against a test sheet, deciding how it would actually ship, and then presenting it back as if to the client who asked for it.
+You are running seven short client engagements, one per industry, one after another. Each one is a real business problem. For each, you: scope it, judge if it's worth building, design the system and database, direct an AI coding agent to build a working prototype, check it, decide how it would actually ship, and present it back as if to the client.
 
-This project exists to build one thing above everything else: the habit of running a full lifecycle, quickly and correctly, on a problem you have never seen before, in an industry you do not already know, and then explaining it clearly and confidently out loud to someone who is not technical. That last part, presenting under real questioning, is deliberately trained seven times here, because it is the skill most resources from non-English-speaking backgrounds get the least practice on, and it does not improve without repetition.
+**Before you start, open `examples/worked-example-loandesk/`.** It's a complete, finished engagement: one document (`compilation.md`) and one working mockup (`mockup.html`) you can open right now. This is what "done" looks like. Match its shape and depth for your own seven; don't copy its wording.
 
-What you build in each engagement is a working mockup, not a production product. Every screen and flow should genuinely work when you click through it: forms save, lists update, the one AI feature actually responds. What it does not need is hardened security, a real deployment pipeline, exhaustive test coverage, or a live hosted URL. Each mockup is a standalone HTML file that runs by opening it in a browser, sitting in its own folder in your repository. The point is not to prove the system could survive real production traffic or stay online. The point is to prove you can think through a full lifecycle correctly and produce something real enough to demo confidently, seven times, across seven different industries. This project is fully generic: it is written so it can be handed to any resource at this tier, with no assumption about which domain they already know.
+**What you build is a prototype, not a production app.** Every screen genuinely works when clicked, but there's no real server, no database, no hosting, no automated test suite. Build it with an AI coding agent (Claude Code or similar) as a single standalone HTML file that opens in any browser, exactly like the worked example. This isn't a shortcut. It's the point: your time goes into requirements, design, and presentation, not infrastructure.
 
-Each engagement also produces one single document, not a folder full of separate files. Feasibility, requirements, design, and diagrams all live together in one place, in the order you would actually walk someone through them, with diagrams drawn directly in the document itself rather than in a separate diagramming tool. This keeps seven engagements from turning into forty scattered files.
+**Every engagement produces exactly two files:** `compilation.md` (one document, feasibility through retrospective, diagrams included as Mermaid so they render inline) and one mockup file. Nothing else. This is deliberately simpler than earlier drafts of this brief, so a reviewer never has more than two files to open per engagement.
 
-By the end, you will have seven small, demoable mockups sitting in your own public GitHub repository, fully documented, with resume and LinkedIn material drawn directly from them.
+This project trains one thing above all else: presenting your work, clearly and confidently, to someone who isn't technical, under real questioning. That's trained seven times here on purpose, because it's the skill most resources get the least practice on, and it doesn't improve without repetition.
+
+By the end: seven documented prototypes in your own public GitHub repo, a portfolio page, and resume material.
 
 ---
 
@@ -29,412 +31,248 @@ By the end, you will have seven small, demoable mockups sitting in your own publ
 
 | Category | Area |
 |---|---|
-| SDLC and Engineering Practices | Development Lifecycle |
-| SDLC and Engineering Practices | Testing Discipline |
-| Programming and Stack Fundamentals | API Construction |
-| Programming and Stack Fundamentals | Database Design |
-| AI-Driven Development and Automation | Coding Agents |
-| AI-Driven Development and Automation | Multi-Tool Fluency |
-| System Design and Architecture | Architecture and Tradeoffs |
-| System Design and Architecture | Cost-Aware Design |
-| Independent Operation and Delivery | Scoping and Requirements |
-| Independent Operation and Delivery | Self-Management |
-| Career Assets and Hireability | Business and ROI Fluency |
-| Career Assets and Hireability | Portfolio Projects |
-| Career Assets and Hireability | Resume, LinkedIn, and Upwork Readiness |
+| SDLC and Engineering Practices | Development Lifecycle, Testing Discipline |
+| Programming and Stack Fundamentals | API Construction, Database Design |
+| AI-Driven Development and Automation | Coding Agents, Multi-Tool Fluency |
+| System Design and Architecture | Architecture and Tradeoffs, Cost-Aware Design |
+| Independent Operation and Delivery | Scoping and Requirements, Self-Management |
+| Career Assets and Hireability | Business and ROI Fluency, Portfolio Projects, Resume/LinkedIn/Upwork Readiness |
 
-Communication and Client Readiness (Technical Explanation, Written Communication, Spoken English and Verbal Communication, Interview and Client Q&A) is trained through the Review and Presentation section below, on every one of the seven engagements, rather than as a separate piece of work. This project trains it more heavily than most, on purpose.
+Communication and Client Readiness rides on every engagement's presentation, trained more heavily here than in any other project in this library.
 
 ---
 
-## What Is Tested
+## What This Trains
 
-By the end of this project, you should be able to show, on request:
+**Process, structure, and judgment**
+- Judging feasibility and pricing build and run cost, fast, for a problem with no template
+- Turning a short client ask into a proper SRS, surfacing rules the client never states
+- Designing a system and a database that fit the actual domain, not a copy of a previous engagement with renamed tables
+- Directing an AI coding agent as the builder: writing a spec it can work from, catching what it gets wrong, not accepting its first output
 
-- A feasibility judgment and a cost estimate you can defend, for a problem you were not given a template for.
-- One compiled document per engagement that a stakeholder who has never met you could read start to finish and understand what is being built, why, and how, with diagrams that render in place rather than living in a separate file.
-- A system design and a database design that fit the actual problem, not a copy of an earlier project's schema with different table names.
-- A diagram for the critical flow in each engagement, accurate enough that someone could implement from it.
-- Correct use of an AI coding agent to build a real, clickable, standalone mockup from a spec you wrote, with you directing it rather than accepting whatever it produces first.
-- A completed test sheet showing what you checked in each mockup and what you found.
-- Seven mockups sitting in your own public GitHub repository, each openable directly as a file with no server or hosting required, plus a portfolio page and resume material built from them.
-- Seven short, clear presentations of problem, solution, and implementation, with at least two defended live under real questioning.
-
-## What Is Learned
-
-- How to judge, quickly, whether an idea is worth building, and how to put a real number on what it would cost to build and to run.
-- How to turn a short, informal problem statement into a proper SRS, including the requirements the client did not think to state.
-- How to design a system and a database for a domain you do not already know, by asking the right questions about the domain's rules before you draw anything.
-- How to write a sequence diagram that actually captures a critical flow, not just a happy path box diagram, using a diagram-as-code syntax you can embed directly in a markdown document.
-- How to direct an AI coding agent as the implementer of a working mockup: writing a spec it can build from, reviewing what it produces, and catching what it gets wrong.
-- How to build a mockup as a single self-contained file that anyone can open and use immediately, with no server, no build step, and no account to sign up for.
-- The difference between what a mockup needs to prove and what a production system needs to prove, and why confusing the two wastes your limited time.
-- How to compile a feasibility note, requirements, design, and diagrams into one coherent document instead of scattering them across many files, and why that single-document habit matters when someone else has to actually read your work.
-- How to package finished work into something a stranger can immediately understand: a demo-ready repository, a live link, and a resume line.
-- How to explain the same piece of work seven different ways to seven different audiences, and hold your own under real, unscripted questioning each time.
-
-## What Is Practiced
-
-- Running the full development lifecycle, in order, seven times, on unfamiliar problems, on a tight timeline.
-- Feasibility and cost analysis as a real deliverable, not a throwaway paragraph.
-- Requirements analysis on a domain you have to learn quickly, including recognizing what you do not know and asking for it.
-- System design, database design, and sequence diagramming as fast, repeatable habits rather than one-off exercises.
-- Directing AI-assisted mockup building: prompting from a spec, reviewing output critically, and taking ownership of what gets shipped.
-- Writing and running a real test sheet, focused on what a demo needs to survive rather than what a production system needs to survive.
-- Presenting the same project structure, problem, solution, implementation, seven times, sharpening the delivery each time.
-- Answering interview-style, client-style questions live, with no script, immediately after each build.
-- Packaging finished work for the outside world: a public repository, a live demo link, and resume and LinkedIn writing.
+**Presentation and communication**
+- Explaining problem, solution, and implementation clearly to a non-technical audience, seven times, sharper each time
+- Answering client-style questions live, with no script
+- Packaging finished work so a stranger, a client, or an interviewer understands it immediately
 
 ---
 
 ## Prerequisites
 
-Before starting, you should already have completed Project 1 (or an equivalent) and have working experience with the following. If any of these feel shaky, ask your AI Instructor for a short, fast revision before you start, rather than during an engagement.
+You should already have completed Project 1 (or equivalent) and be comfortable with:
+- Building a REST API and a relational database from a written spec
+- Directing an AI coding agent (such as Claude Code) to implement a feature from a plan you wrote
+- Reading an unfamiliar problem statement and asking clarifying questions before building
 
-- Building a REST API and a relational database from a written specification
-- Directing an AI coding agent such as Claude Code to implement a feature from a plan you wrote
-- Basic familiarity with git branching and commits
-- Comfort reading an unfamiliar problem statement and asking clarifying questions before building
+### Your AI Instructor, troubleshooting partner, and domain expert
 
-### Setting up your AI Instructor and troubleshooting partner
+The same two skills from earlier projects are in `skills/`. Add both to your Claude project before you start.
 
-The same two skills from your earlier projects are included in this repository, in the `skills/` folder. Add both to your Claude project before you start.
+- **Learning agent** (`skills/teach-me/SKILL.md`). Say "teach me" plus a topic. Log your confidence score in `LEARNING_LOG.md`.
+- **Troubleshooting agent** (`skills/troubleshoot/SKILL.md`). Describe what broke, get guided to the cause.
 
-- **Learning agent** (`skills/teach-me/SKILL.md`). Say "teach me" followed by a topic, and it walks you through it one step at a time, has you do the work yourself, and asks you for a confidence score at the end. Save that score and reflection in `LEARNING_LOG.md`.
-- **Troubleshooting agent** (`skills/troubleshoot/SKILL.md`). Describe what has broken and it guides you to the cause instead of handing you the fix.
-
-For this project specifically, your AI Instructor also plays a third role: a stand-in domain expert. When you start an engagement in an industry you do not know, ask it to explain the domain's basic rules and vocabulary before you write requirements against it. Treat that explanation as a starting point to verify, not as ground truth to copy blindly, the same way you would treat a client's first explanation of their own business.
+For this project, your AI Instructor also plays a third role: a stand-in domain expert. Before writing requirements for an industry you don't know, ask it to explain the domain's basic rules first. Verify what it tells you rather than copying it blindly, the same way you'd verify a client's first explanation of their own business.
 
 ---
 
-## How to Learn This
+## Tools, Stack, and Diagrams
 
-Work through the concepts below before your first engagement. You will not have time to learn these mid-cycle once the seven engagements are underway.
-
-| Topic | Learn With Your AI Instructor | Official Documentation | Optional Video Reference |
-|---|---|---|---|
-| Feasibility analysis and build versus run cost | Ask it to walk you through a worked cost estimate for a small system, covering both build effort and ongoing run cost including AI token spend | Your chosen cloud provider's pricing calculator, and your chosen AI provider's pricing page | Search for a short explainer on rough order of magnitude estimation |
-| Writing an SRS from a short problem statement | Ask it to show you the gap between a one-paragraph client ask and a full SRS, and what questions closed that gap | IEEE SRS structure as a reference, adapted to a lighter format for this project | Optional |
-| System design for an unfamiliar domain | Ask it to interview you the way you should interview a client, extracting entities, rules, and edge cases from a vague brief | Your chosen backend framework's architecture guidance | Optional |
-| Database design for a new domain | Ask it to review your schema sketch and challenge assumptions before you build it | Your chosen database's official documentation | A short video on normalization if the concept is new |
-| Sequence diagrams as diagram-as-code | Ask it to walk through writing a Mermaid sequence diagram for a login flow, then hand it a harder flow to critique your attempt | Mermaid's official sequence diagram syntax documentation | A short demo of reading a sequence diagram |
-| Directing an AI coding agent to build a mockup | Ask it to explain what a good implementation spec looks like versus a vague one, and why the difference matters for output quality | Your chosen coding agent's official documentation on writing effective prompts or specs | Optional |
-| Building a single-file HTML mockup | Ask it to explain how to keep HTML, CSS, and JavaScript in one file with fixture data instead of a real backend, and when that stops being enough | MDN's guides on HTML, CSS, and JavaScript basics | Optional |
-| Mockup versus production test scope | Ask it to explain what a demo-critical test sheet should cover that a full regression suite would also cover, and what it can safely skip | Your chosen test framework's documentation, read for reference only | Optional |
-| Writing resume and LinkedIn material from a project | Ask it to turn a project summary into two or three outcome-focused resume bullets, then critique your own draft against them | Your resume or LinkedIn's own writing guidance | Optional |
-
-Structured paid courses are not required at the moment. If you are still stuck after trying the options above, speak with your mentor before looking for a course.
+- **The mockup:** a single self-contained HTML file, inline CSS and JavaScript, fixture data standing in for a real database. Built by directing an AI coding agent such as Claude Code, exactly as shown in `examples/worked-example-loandesk/mockup.html`. It must open with nothing more than a browser: no server, no build step, no account.
+- **Diagrams:** written in Mermaid, as code blocks inside `compilation.md` itself. GitHub renders these automatically, so a diagram shows up the moment someone opens the document, with no separate tool involved. See the worked example for what this looks like in practice.
+- **If you strongly prefer a frontend framework** over plain HTML, that's fine, as long as the result still opens with no server and no build step.
 
 ### Work manually first, then let AI accelerate the rest
 
-For every engagement, sketch the entities, the schema, and the critical flow by hand or talked through out loud with your AI Instructor, before you generate any of it or hand a spec to your coding agent. Once you understand what you are building and why, using a coding agent to accelerate the actual mockup build is expected and encouraged, since that mirrors how this work is done professionally under real client timelines. What matters is that you can explain every decision afterward, in your own words, without notes, on all seven engagements, not just the ones still fresh in memory.
-
----
-
-## Electives: Underlying Skills You Will Also Learn
-
-Pick the options that match your chosen approach. You do not need to use the same approach across all seven engagements, but switching every time will cost you time you do not have on a one-day cycle, so choose once and stay consistent unless a mentor tells you otherwise.
-
-**Frontend, for the mockup itself**
-- Plain HTML, CSS, and JavaScript in a single file, with fixture data held in a JavaScript array or object standing in for a database. This is the default and the fastest path for this project. Official documentation: MDN Web Docs
-- A frontend framework such as React, if you are more fluent in it than in plain HTML and CSS, as long as you produce a static export that still opens and runs as a self-contained set of files with no server needed
-
-**Diagramming**
-- Mermaid, written as code blocks directly inside your compiled document. GitHub, and most markdown viewers, render these automatically, so a diagram opens the moment someone reads your document, with no separate diagramming tool involved. Official documentation: mermaid.js.org
-
----
-
-## Recommended Stack
-
-For the mockup, the recommended and fastest approach is a single self-contained HTML file per engagement: inline CSS, inline JavaScript, and a small amount of fixture data standing in for a real backend and database. This is not a downgrade from building a real application. It is the correct tool for what this project is testing, which is your requirements, design, and presentation thinking, not your ability to stand up infrastructure. If you strongly prefer a frontend framework, that is acceptable as long as the result still runs by opening a file with no server, no build step, and no account required from whoever is reviewing it. Diagram everything in Mermaid inside your compiled document rather than in a separate tool.
+For every engagement, sketch the entities, schema, and critical flow yourself, or talk it through with your AI Instructor, before generating anything or handing a spec to your coding agent. What matters is that you can explain every decision afterward, in your own words, on all seven engagements.
 
 ---
 
 ## The Exact Brief
 
-Run seven client engagements. Each one is a short, standalone consulting cycle: understand the problem, judge whether it is worth building, design it, build a working mockup with an AI coding agent, check it against a test sheet, decide how it would ship, and present it back. A closing phase then turns all seven into a public portfolio.
+Run seven client engagements. Each one: scope it, design it, build a prototype with an AI coding agent, check it, write the ship-readiness note, present it. A closing phase turns all seven into a portfolio.
+
+**Reference `examples/worked-example-loandesk/` for what a complete engagement looks like before you start Engagement 1.**
 
 ### The Seven Engagements
 
-**Engagement 1: LoanDesk (Financial Services)**
+**1. LoanDesk (Financial Services).** A microfinance lender wants to stop originating loans over email and spreadsheets. Build: application intake, a document checklist, an affordability rule (you must surface this yourself, see the worked example), a two-step approval (reviewer recommends, a different person approves), an amortization schedule, an audit trail.
 
-A small microfinance lender wants to stop originating loans over email and spreadsheets. Mock up a loan origination system: an application intake form, a document checklist the applicant must satisfy before review, eligibility and affordability rules that decide whether an application can proceed, an amortization schedule generated for any approved loan amount, term, and interest rate, a two-step approval flow (a reviewer recommends, a separate approver decides), and an audit trail showing who did what to each application and when. Your requirements analysis must surface the affordability rule yourself. The client will only tell you "we do not want to lend to people who cannot pay it back" if asked the right question.
+**2. LabLine (Healthcare).** A diagnostic lab wants to stop delivering results by phone and PDF email. Build: test orders linked to a patient, reference-range flagging, a doctor review and release gate before a patient sees anything, consent capture, a critical-value alert. Get the release gate right: a result reaching a patient before doctor review is the worst failure mode here.
 
-**Engagement 2: LabLine (Healthcare)**
+**3. ClauseTrack (Legal).** A legal team wants to stop tracking contracts in a shared folder of Word documents. Build: a clause library, contract version history, an approval chain, renewal and obligation deadline tracking, an AI summary feature that always shows alongside its source clause, never presented as authoritative alone.
 
-A diagnostic lab wants to move result delivery off phone calls and PDF email attachments. Mock up a lab result portal: test orders linked to a patient, result entry against each test's normal reference range with automatic flagging when a result falls outside it, a doctor review and release step before a patient can see anything, patient consent captured before any result is shared, and a critical-value alert that fires immediately when a result is dangerously abnormal, separate from the normal release flow. Get the release gate right in your design, even in mockup form. A result that reaches a patient before a doctor has seen it is the single worst failure mode in this engagement, and your design should make that failure structurally difficult, not just documented as a rule.
+**4. ClaimGate (Insurance).** A motor insurer wants faster first notice of loss without auto-approving anything. Build: incident intake, photo evidence, policy validation, fraud red-flag scoring that surfaces suspicious claims for a human (never an auto-rejection), assessor assignment, settlement calculation.
 
-**Engagement 3: ClauseTrack (Legal)**
+**5. ColdChain (Logistics).** A pharma distributor needs proof its shipments stayed in range. Build: shipment registration, a simulated temperature feed you build yourself (normal or drifting on command), breach detection, a custody handover chain, a liability report a court could actually follow.
 
-A small legal team wants to stop tracking contracts in a shared folder of Word documents. Mock up a contract lifecycle tool: a clause library that clauses can be pulled from, version history on every contract so nothing is silently overwritten, an approval chain before a contract is considered final, renewal and obligation deadline tracking that surfaces what is coming due, and an AI feature that summarizes a contract's key terms in plain language, with the summary always shown alongside the source clause it came from rather than presented as authoritative on its own. Decide, and be ready to defend, exactly what your AI summary feature is and is not allowed to be relied on for.
+**6. GrantBoard (Education).** A scholarship foundation wants off a shared inbox. Build: application windows, document verification, a weighted scoring rubric, a recusal mechanism for connected committee members, award letters and appeals.
 
-**Engagement 4: ClaimGate (Insurance)**
+**7. PayRun (HR and Finance).** A small company wants off spreadsheet payroll. Build: salary structures, attendance import, tax calculation, payslips, a disbursement export, a month-end lock that cannot be bypassed. The worst failure mode: someone quietly editing a closed pay period.
 
-A motor insurer wants to speed up first notice of loss without approving anything automatically. Mock up a claim intake and triage system: an incident report form, photo evidence upload, automatic validation that the claimed policy is active and covers the claimed event, a set of fraud red-flag rules that score and surface suspicious claims for human attention rather than rejecting them outright, assessor assignment, and a settlement calculation based on policy limits and any applicable deductible. The fraud rules are a scoring signal for a human, not an automatic decision. Your design should make it obvious that a flagged claim still requires a person to act on it.
+### The Deliverable Set, Every Engagement
 
-**Engagement 5: ColdChain (Logistics)**
+Exactly two files, every time:
 
-A pharmaceutical distributor needs to prove its shipments stayed within a safe temperature range the entire way. Mock up a cold chain monitoring system: shipment registration with a required temperature range, a simulated temperature feed you generate yourself (no real hardware is available for this engagement, so build a realistic simulator that can be told to behave normally or to drift out of range on command), automatic breach detection against the shipment's required range, a custody handover chain recording who held the shipment at each leg of the journey, and a liability report that can be generated for any shipment showing its full temperature history and who held it when a breach occurred. Design your breach detection to be explainable. A liability report a court could not follow is not a working feature.
+**`compilation.md`**, one markdown file, these sections in order:
+1. **Feasibility note** — build cost and run cost, with reasoning, not a placeholder number
+2. **SRS** — functional requirements, including at least one domain rule you had to surface yourself
+3. **System and database design** — components, schema, tradeoffs, with the schema and the critical flow as Mermaid diagrams in this section
+4. **Agent direction log** — what you asked your coding agent to build, what it got right, what you corrected
+5. **Test sheet** — what you checked, the result, any defect found
+6. **Ship-readiness note** — one paragraph on what production would actually need
+7. **Retrospective** — what went well, what you'd change, how this compared to the last engagement
 
-**Engagement 6: GrantBoard (Education)**
-
-A scholarship foundation wants to stop running applications through a shared inbox. Mock up a scholarship application system: application windows that open and close on a schedule, document verification against a required checklist, a weighted scoring rubric that committee members apply consistently, a recusal mechanism so a committee member connected to an applicant is excluded from scoring that application, and award letters and an appeals process for rejected applicants. Your design should make the scoring rubric visible and consistent enough that two different committee members would reach comparable scores on the same application.
-
-**Engagement 7: PayRun (HR and Finance)**
-
-A small company wants to stop running payroll by hand in a spreadsheet. Mock up a payroll system: employee salary structures, attendance import, a tax calculation against a stated tax slab table, generated payslips, a disbursement export file, and a month-end lock that prevents changes to a payroll period once it has been finalized. Get the tax calculation and the month-end lock right in your design, even in mockup form. A payroll system that lets someone quietly edit a closed pay period is the single worst failure mode in this engagement.
-
-### The Standard Deliverable Set, Every Engagement
-
-Every engagement produces exactly two things, regardless of domain: one compiled document, and one standalone mockup. This consistency is deliberate: by the seventh engagement, the shape of the work should feel familiar even though the domain does not, and a reviewer should be able to open exactly two things per engagement to see everything.
-
-**One compiled document, `compilation.md`**, written as a single markdown file in this order:
-
-1. **Feasibility note**, including a stated build cost estimate (your time, priced as if billed) and a run cost estimate (hosting, database, and AI token cost at a stated usage assumption), with your reasoning shown, not just a final number.
-2. **SRS**, covering functional requirements, the domain rules you had to surface yourself, and explicit out-of-scope items.
-3. **System and database design**, covering the components, the schema and its relationships, and the key tradeoffs you chose between, with the schema relationships and the engagement's critical flow drawn as Mermaid diagrams directly in this section.
-4. **Agent direction log**, a short record of what you asked your AI coding agent to build, what it got right, and what you had to correct.
-5. **Test sheet**, listing what you checked in the mockup, the result, and any issue found and its status. This is scoped to what a confident demo needs to survive, not to production-grade coverage.
-6. **Ship-readiness note**, one paragraph on what would need to be added to take the mockup to a real production system. This is a written judgment, not a built pipeline.
-7. **Retrospective**, what went well, what you would do differently, and how this engagement compared to the one before it.
-
-**One standalone mockup**, a single self-contained file (or a small folder if your approach genuinely requires more than one file) that opens directly in a browser with no server, no build step, and no hosting. Every screen and flow in it must genuinely work when clicked through: forms save to in-memory or local storage, lists update, the one AI feature responds, even though nothing here is a real backend.
+**One mockup file**, self-contained, opens with nothing but a browser, every screen genuinely clickable.
 
 ### Quality Bar
 
-- The feasibility section of every `compilation.md` must include a real, reasoned number, not a placeholder.
-- Every SRS section must contain at least one requirement that came from a domain rule you had to ask about or research, not one that was stated outright in the brief above.
-- Every diagram lives inside `compilation.md` as Mermaid, not as a separate file in a separate tool.
-- Every mockup must be genuinely clickable through its core flow, and must open with nothing more than a browser. A screen that only looks right but does nothing when used does not meet this bar. A mockup that needs a server, an account, or a build step to run does not meet this bar.
-- Every engagement must be presentable on its own, in under five minutes, to someone who has not read this brief.
+- The feasibility number must be real and reasoned, not a placeholder
+- At least one SRS requirement must be a domain rule you surfaced, not one stated outright above
+- Diagrams live inside `compilation.md` as Mermaid, not a separate file
+- The mockup must be genuinely clickable through its core flow, with no server, account, or build step
+- Every engagement must be presentable, cold, in under five minutes
 
 ---
 
 ## Requirements and Scope
 
-**In scope:**
-- All seven engagements listed above, each carried through the full lifecycle
-- One compiled document per engagement (`compilation.md`), covering feasibility, SRS, system and database design with Mermaid diagrams, the agent direction log, the test sheet, the ship-readiness note, and the retrospective, in that order
-- A working, clickable, standalone mockup for each engagement, opening with no server, no build step, and no hosting
-- A final cross-engagement reflection
-- Seven live presentations, or a mentor-selected subset presented live with the rest presented in writing, at your mentor's discretion
-- A final portfolio packaging phase covering all seven engagements: a clean public repository, a portfolio page, and resume and LinkedIn material
+**In scope:** all seven engagements, one `compilation.md` and one mockup each, a final cross-engagement reflection, seven presentations (two live and mentor-selected, five written), a final portfolio packaging phase.
 
-**Out of scope for this project:**
-- Full production hardening, security review, or compliance certification of any engagement. Domain rules such as consent, audit trails, and human-in-the-loop gates are required as functional mockup features. A full compliance audit is not
-- Real integration with any external system (a real payment processor, a real lab instrument, real hardware sensors). Simulate anything a real integration would provide
-- A real CI/CD pipeline, automated regression suite, or production deployment infrastructure for any of the seven. The written ship-readiness note replaces this
-- Live hosting of any mockup. A mockup that only runs by opening a file is the expected and correct outcome, not a shortcut
-- A single shared codebase across all seven engagements. Each is its own small system, though you may reuse your own boilerplate
+**Out of scope:** production hardening or compliance certification (the domain rules like consent gates and audit trails are required as features; a full audit is not), real external integrations (simulate them), real CI/CD or an automated regression suite (the ship-readiness note replaces this), live hosting of any mockup, one shared codebase across engagements.
 
-**Definition of done, in plain language:** for each of the seven engagements, someone unfamiliar with the problem can open one `compilation.md` and understand what was built, why, and how, open the one mockup file and see it genuinely work with nothing more than a browser, and watch or hear you present the problem, your solution, and your implementation without notes. By the end, all seven live in your own public GitHub with a portfolio page and resume material pointing at them.
+**Definition of done, in plain language:** for each engagement, a stranger can open `compilation.md` and understand what was built and why, open the mockup file and see it genuinely work, and hear you present it without notes. By the end, all seven live in your public GitHub with a portfolio page and resume material.
 
 ---
 
 ## Project Phases
 
-Each of the seven engagements runs through the same three build phases, compressed into roughly one working day, followed by a shared closing phase once all seven are done. Seven days of engagements plus a closing phase fills the ten working day project timeline.
+Each engagement runs the same three phases, roughly one working day, seven times, then one shared closing phase.
 
-### Phase 1: Requirements and Planning (per engagement)
+**Phase 1, Requirements and Planning.** Identify unstated domain rules using your AI Instructor as a stand-in expert, then verify what it tells you. Write the feasibility and SRS sections. Sketch the schema and critical flow by hand, then write the design section with both as Mermaid diagrams.
 
-Substeps:
-- Read the engagement's brief and identify what domain rules are implied but not stated outright
-- Use your AI Instructor as a stand-in domain expert to fill gaps, and verify what it tells you rather than accepting it uncritically
-- Start `compilation.md` and write its feasibility section, including your cost estimate and reasoning
-- Write the SRS section
-- Sketch the system design, the database schema, and the critical-flow diagram by hand before generating anything, then write the system and database design section with the schema and the critical flow as Mermaid diagrams
+**Phase 2, Prototype Build.** Write a spec, direct your coding agent, correct what it gets wrong, note the corrections. Confirm the mockup opens with nothing but a browser.
 
-Artifact produced, per engagement, in `docs/scenario-N-name/`:
-- `compilation.md`, feasibility through system and database design sections complete
+**Phase 3, Check and Present.** Run the mockup end to end, write the test sheet, the ship-readiness note, and the retrospective. Present live if this is a mentor-selected engagement.
 
-### Phase 2: Mockup Build (per engagement)
-
-Substeps:
-- Write an implementation spec clear enough to hand to a coding agent
-- Direct your coding agent through the build, reviewing its output at each meaningful step rather than only at the end
-- Correct what it gets wrong, and note what you corrected
-- Confirm the mockup opens and runs with nothing more than a browser, no server, build step, or hosting involved
-
-Artifacts produced, per engagement:
-- The standalone mockup file (or small folder) in `src/scenario-N-name/`
-- The agent direction log, added as its own section in `compilation.md`
-
-### Phase 3: Check and Present (per engagement)
-
-Substeps:
-- Run through the mockup end to end and write the test sheet section
-- Write the ship-readiness note section
-- Write the retrospective section, closing out `compilation.md` for this engagement
-- Prepare and give a short problem, solution, implementation walkthrough, live if this is one of your mentor-selected engagements
-
-Artifact produced, per engagement:
-- `compilation.md`, all seven sections complete: feasibility, SRS, system and database design, agent direction log, test sheet, ship-readiness note, retrospective
-
-### Phase 4: Portfolio Packaging (after all seven engagements)
-
-This phase runs once, after all seven engagements are complete, not per engagement.
-
-Substeps:
-- Write the cross-engagement reflection: what got faster or better across the seven cycles, which domain was hardest to scope correctly and why, and what pattern you now use for the first hour of any new client engagement
-- Confirm each engagement's folder is public, its `compilation.md` opens cleanly on GitHub with diagrams rendering, and its mockup can be understood by a stranger in under two minutes
-- Add all seven, or your strongest three to five, to your portfolio site from Project 0, linking each entry to its folder in this repository
-- Write two or three outcome-focused resume bullets and a LinkedIn project entry drawing on this project as a whole
-- Confirm every live link still works before submitting
-
-Artifacts produced:
-- `docs/reflection.md` (top level, not inside a scenario folder)
-- Updated portfolio site (external to this repository, linked from `PRESENTATION.md`)
-- Resume and LinkedIn material (linked or pasted into `PRESENTATION.md`)
+**Phase 4, Portfolio Packaging (once, after all seven).** Write the cross-engagement reflection. Confirm every folder is public and every `compilation.md` renders cleanly with diagrams visible. Add your strongest three to five engagements to your Project 0 portfolio site. Write resume bullets and a LinkedIn entry.
 
 ---
 
 ## Artifact and Folder Guide
 
-| Artifact | Format | Location |
-|---|---|---|
-| Compiled document (feasibility, SRS, design with Mermaid diagrams, agent log, test sheet, ship-readiness note, retrospective) | Markdown | `docs/scenario-N-name/compilation.md` |
-| Standalone mockup | Self-contained HTML, or a small static file set | `src/scenario-N-name/` |
-| Cross-engagement reflection | Markdown | `docs/reflection.md` |
-| Learning log | Markdown | `LEARNING_LOG.md` |
-| Submission, including portfolio and resume material | Markdown | `PRESENTATION.md` |
-| Screenshots and other evidence | Images or links | `proof/scenario-N-name/` |
+| Artifact | Location |
+|---|---|
+| Compiled document (all seven sections) | `docs/scenario-N-name/compilation.md` |
+| Standalone mockup | `src/scenario-N-name/` |
+| Worked reference example | `examples/worked-example-loandesk/` |
+| Cross-engagement reflection | `docs/reflection.md` |
+| Learning log | `LEARNING_LOG.md` |
+| Submission, portfolio, and resume material | `PRESENTATION.md` |
+| Screenshots and other evidence | `proof/scenario-N-name/` |
 
-The seven scenario names, in order, are `scenario-1-loandesk`, `scenario-2-labline`, `scenario-3-clausetrack`, `scenario-4-claimgate`, `scenario-5-coldchain`, `scenario-6-grantboard`, `scenario-7-payrun`. Empty starter folders for each already exist in the repository. Each engagement's whole compiled record is exactly two things: one `compilation.md` and one mockup file. A reviewer never needs to open more than that per engagement.
+Scenario names, in order: `scenario-1-loandesk`, `scenario-2-labline`, `scenario-3-clausetrack`, `scenario-4-claimgate`, `scenario-5-coldchain`, `scenario-6-grantboard`, `scenario-7-payrun`.
 
 ---
 
-## How this works
+## How This Works
 
-- Fork the project repository that has been shared with you.
-- Work through the seven engagements in order, inside your fork.
-- As you finish each engagement, commit your work and save your proof into that engagement's `proof/` subfolder.
-- Keep `LEARNING_LOG.md` updated as you go, one entry per skill, produced with your teach-me skill.
-- After all seven, complete the Portfolio Packaging phase.
-- When everything is done, fill in `PRESENTATION.md` with every link, artifact, and proof of learning across all seven engagements, plus your portfolio and resume material.
-- Add your mentor as a collaborator on your fork.
-- Schedule a call and present your work.
+- Fork the repository. Open `examples/worked-example-loandesk/` before touching Engagement 1.
+- Work through the seven engagements in order. Commit as you finish each one, proof into that engagement's `proof/` folder.
+- Keep `LEARNING_LOG.md` updated as you go.
+- After all seven, run Phase 4 (Portfolio Packaging), then fill in `PRESENTATION.md`.
+- Add your mentor as a collaborator. Schedule a call and present.
 
-## Repository structure
+## Repository Structure
 
 ```
 project-13-the-consultancy/
-  README.md              This brief. Read it, do not edit it.
-  PRESENTATION.md         Your submission. All links, artifacts, and proof go here.
-  LEARNING_LOG.md         One short wrap up per skill you learn.
+  README.md              This brief.
+  PRESENTATION.md         Your submission.
+  LEARNING_LOG.md         One entry per skill.
+  examples/
+    worked-example-loandesk/
+      compilation.md        A complete, finished reference document.
+      mockup.html            The matching working prototype. Open it directly.
   skills/
-    teach-me/SKILL.md       Your learning agent (provided).
-    troubleshoot/SKILL.md   Your troubleshooting agent (provided).
+    teach-me/SKILL.md
+    troubleshoot/SKILL.md
   proof/
-    scenario-1-loandesk/    Screenshots and other evidence for this engagement.
-    scenario-2-labline/
-    scenario-3-clausetrack/
-    scenario-4-claimgate/
-    scenario-5-coldchain/
-    scenario-6-grantboard/
-    scenario-7-payrun/
+    scenario-1-loandesk/ ... scenario-7-payrun/
   docs/
-    project-brief.md        Internal tracking metadata for mentors, not resource facing content.
-    reflection.md            Your final cross-engagement reflection, completed last.
-    scenario-1-loandesk/
-      compilation.md         Everything for this engagement: feasibility, SRS, design, diagrams, agent log, test sheet, ship-readiness note, retrospective.
-    scenario-2-labline/
-      compilation.md
-    scenario-3-clausetrack/
-      compilation.md
-    scenario-4-claimgate/
-      compilation.md
-    scenario-5-coldchain/
-      compilation.md
-    scenario-6-grantboard/
-      compilation.md
-    scenario-7-payrun/
-      compilation.md
+    project-brief.md        Internal, mentor-facing.
+    reflection.md            Your cross-engagement reflection, written last.
+    scenario-1-loandesk/compilation.md
+    scenario-2-labline/compilation.md
+    scenario-3-clausetrack/compilation.md
+    scenario-4-claimgate/compilation.md
+    scenario-5-coldchain/compilation.md
+    scenario-6-grantboard/compilation.md
+    scenario-7-payrun/compilation.md
   src/
-    scenario-1-loandesk/     Your standalone mockup for this engagement. Opens directly in a browser.
-    scenario-2-labline/
-    scenario-3-clausetrack/
-    scenario-4-claimgate/
-    scenario-5-coldchain/
-    scenario-6-grantboard/
-    scenario-7-payrun/
+    scenario-1-loandesk/ ... scenario-7-payrun/    Your mockups. Open directly in a browser.
   .gitignore
   LICENSE
 ```
 
-Note: this project's scaffold does not include a `Dockerfile`, `tests/`, or `.github/workflows/` folders used by other projects in this library, since a real automated test suite, CI pipeline, and containerized deployment are explicitly out of scope here. If your chosen approach generates them anyway, that is fine, but they are not assessed.
+No `Dockerfile`, `tests/`, or `.github/workflows/`: containerization, an automated test suite, and CI are out of scope here.
 
 ## How to Start Building
 
-1. Fork the project repository into your own account.
-2. Read this brief in full before starting Engagement 1.
-3. Work through the relevant items in How to Learn This using your teach-me skill, and log each one in `LEARNING_LOG.md`.
-4. Start Engagement 1 (LoanDesk). Complete its Phase 1 before touching implementation.
-5. Work through Phases 2 and 3 for LoanDesk, then move to Engagement 2. Repeat for all seven.
-6. Keep each engagement inside its own scenario folder. Do not let one engagement's code, docs, or proof bleed into another's.
-7. If something breaks, use your troubleshoot skill before asking your mentor.
-8. After the seventh engagement, complete Phase 4 (Portfolio Packaging).
+1. Fork the repository. Open and click through `examples/worked-example-loandesk/mockup.html`, then read its `compilation.md`.
+2. Start Engagement 1 (LoanDesk). Complete Phase 1 before touching implementation.
+3. Work Phases 2 and 3, then move to Engagement 2. Repeat for all seven.
+4. Keep each engagement inside its own scenario folder.
+5. After Engagement 7, run Phase 4 (Portfolio Packaging).
 
 ---
 
 ## Definition of Done
 
 - [ ] All seven engagements completed through Phases 1 to 3
-- [ ] `compilation.md` completed for each engagement, all seven sections present, with diagrams rendering as Mermaid
-- [ ] A genuinely clickable, standalone mockup for each engagement, opening with nothing more than a browser
-- [ ] Cross-engagement reflection completed at `docs/reflection.md`
-- [ ] All seven engagement folders are public and can be understood by a stranger opening `compilation.md` and the mockup file, with no separate instructions needed
-- [ ] Portfolio site updated with this project's engagements
-- [ ] Resume and LinkedIn material written and included in `PRESENTATION.md`
-- [ ] `LEARNING_LOG.md` has an entry for every area in Covered Areas
-- [ ] `PRESENTATION.md` completed with every link, artifact, and proof of learning across all seven engagements
-- [ ] Loom video or live walkthrough recorded for each engagement your mentor selects
-- [ ] Mentor added as a collaborator on your fork
-- [ ] Live presentation call scheduled and completed
+- [ ] `compilation.md` complete for each engagement, all seven sections, diagrams rendering as Mermaid
+- [ ] A genuinely clickable, standalone mockup for each engagement
+- [ ] Cross-engagement reflection completed
+- [ ] All seven folders public and understandable cold, with no extra instructions needed
+- [ ] Portfolio site updated, resume and LinkedIn material written
+- [ ] `LEARNING_LOG.md` complete, `PRESENTATION.md` complete
+- [ ] Loom video or live walkthrough for each mentor-selected engagement
+- [ ] Mentor added as collaborator, live call scheduled and completed
 
 ---
 
 ## Review and Presentation
 
-Once your Definition of Done checklist is complete, submit your work in three formats:
-
-1. **Written.** `PRESENTATION.md` is your submission file. For each of the seven engagements, include the repository link, the path to that engagement's mockup file, and a short note on what was built and what it cost to estimate and to build. Include your portfolio page link and resume material. Pull your skill notes from `LEARNING_LOG.md`.
-2. **Video.** Record a short Loom walkthrough for at least the two engagements your mentor selects, explaining problem, solution, and implementation as you demonstrate them.
-3. **Live.** Schedule a call with your mentor. On the call, your mentor will pick two of the seven engagements at random or by their own choice. For each one, present problem, solution, and implementation in under five minutes, then answer client-style follow-up questions without notes. Be ready on all seven; you will not know in advance which two are picked.
+1. **Written.** `PRESENTATION.md`: repository link, mockup path, and a short note per engagement, plus portfolio and resume material.
+2. **Video.** A Loom walkthrough for at least the two mentor-selected engagements.
+3. **Live.** Your mentor picks two of the seven at random. Present problem, solution, implementation in under five minutes each, then answer client-style questions without notes. You won't know which two in advance.
 
 ---
 
 ## Bonus Practice Activities
 
-These are optional unless your mentor points you toward one specifically.
-
-**Daily speaking practice with Gemini Live.** If communication has been flagged as an area to work on, use Gemini's interactive live mode for ten minutes a day while working through the engagements. Set it up as your instructor with an instruction along these lines:
+**Daily speaking practice with Gemini Live**, if communication has been flagged. Ten minutes a day:
 
 > You are my speaking coach. Each day I will tell you which engagement I worked on, what I accomplished, and what my goal for today is on The Consultancy project. Listen to me speak for about ten minutes, then give me clear, honest feedback on my clarity, pace, and confidence, and one specific thing to improve tomorrow.
 
-Follow this simple daily agenda: what you did yesterday, what you accomplished, and what your goal is for today.
-
-**Self recorded review.** Record yourself on camera presenting one engagement's problem, solution, and implementation, using any recording app you have available. Watch it back before your live call and note filler words, pacing issues, and any explanation that was not as clear as you thought it would be. Do this again after your third or fourth engagement and compare the two recordings.
+**Self-recorded review.** Record yourself presenting one engagement. Watch it back before your live call. Do it again after engagement 3 or 4 and compare.
 
 ---
 
 ## Interview Gap-Check Questions
 
-These questions are drawn from across all seven engagements. You should be able to answer any of them comfortably, on any engagement, without preparation time.
+1. Pick any engagement. Walk through your build and run cost estimate. What assumptions does it depend on, and how does it change at ten times the usage?
+2. LoanDesk: what happens the moment an application fails the affordability rule?
+3. LabLine: what specifically stops a result reaching a patient before doctor review?
+4. ClauseTrack: what happens if your AI summary is wrong? What stops it becoming the thing someone relies on?
+5. ClaimGate: could a claim ever be auto-rejected with no human seeing it? What prevents that?
+6. ColdChain: how does your simulator decide to report a breach, and how does the liability report trace back to it?
+7. GrantBoard: how does your recusal mechanism actually stop a connected committee member from scoring?
+8. PayRun: what happens if someone tries to edit a closed pay period?
+9. Pick one engagement where you corrected your AI coding agent. What was wrong, how did you notice, what changed in your next spec?
+10. This is a mockup. Pick any engagement: what would need to change before it handled real users and real money or medical data?
+11. Which domain took longest to scope correctly, and why? What would you do differently?
+12. Given a two-sentence client problem, what's the first thing you do before writing any requirement?
+13. Show me your portfolio page, as if I'm a client deciding whether to hire you, in under two minutes.
+14. Open any `compilation.md` cold. Find the ship-readiness note in ten seconds. Open any mockup file with no setup. What did writing it this way make possible?
 
-1. Pick any engagement. Walk through how you arrived at your build and run cost estimate. What assumptions did that number depend on, and how would it change if usage were ten times higher?
-2. For LoanDesk: what happens, in your mockup, the moment an application fails the affordability rule? Who is notified, and what can and cannot happen to that application afterward?
-3. For LabLine: walk through exactly what stops a result from reaching a patient before a doctor has reviewed it. Where in your design is that gate enforced?
-4. For ClauseTrack: your AI feature summarizes a contract clause. What happens if that summary is wrong? What did you design to make sure a wrong summary cannot silently become the thing someone relies on?
-5. For ClaimGate: a claim scores high on your fraud rules. What actually happens next in your system? Could a claim ever be auto-rejected without a human seeing it, and if not, what prevents that?
-6. For ColdChain: your temperature feed is simulated. Explain exactly how your simulator decides to report a breach, and how a liability report traces back to that decision.
-7. For GrantBoard: how does your recusal mechanism actually stop a connected committee member from scoring an application? What would happen if that check were missing?
-8. For PayRun: walk through exactly what your month-end lock prevents, and what happens if someone tries to edit a closed pay period anyway.
-9. Pick one engagement where you had to correct something your AI coding agent got wrong. What was wrong, how did you notice, and what did you change in your next spec to prevent it happening again?
-10. This is a mockup, not a production system. Pick any engagement and explain, specifically, what would need to change before it could handle real users and real money or real medical data.
-11. Across all seven engagements, which domain took the longest to scope correctly, and what specifically made it hard? What would you do differently if you started that one again today?
-12. If a client only gives you a two-sentence problem description, what is the first thing you do before writing any requirement? Show how you actually applied that on one of these seven engagements.
-13. Show me your portfolio page. Walk me through it as if I am a client deciding whether to hire you, in under two minutes.
-14. Open any one `compilation.md` cold, without me telling you which section to go to. Find the ship-readiness note in under ten seconds. What about writing it as one ordered document made that possible?
-15. Open any one mockup file directly, with no setup. What would have had to be true about how you built it for that to just work?
-
-If a resource cannot answer these comfortably, or cannot clear the live presentation for a mentor-selected engagement, they are assigned a decimal variant of this project: the same structure, seven fresh domains, built again until the gap closes.
+If a resource can't answer these comfortably, or can't clear a mentor-selected live presentation, they're assigned a decimal variant: same structure, seven fresh domains, built again until the gap closes.
