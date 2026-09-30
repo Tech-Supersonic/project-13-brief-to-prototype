@@ -6,6 +6,10 @@
 
 [Summary]
 
+## Engagement 1 Compared With Engagement 5
+
+[What got faster, what got sharper, and the evidence for both]
+
 ## What Surprised You
 
 [Summary]

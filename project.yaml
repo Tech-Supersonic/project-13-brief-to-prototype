@@ -1,0 +1,59 @@
+project_id: 13
+title: Brief to Prototype
+version: 1.2.0
+type: prototype-drill
+tier: mid
+category: Scoping and Client Delivery
+rubric_version: v5
+rubric_tags:
+  primary:
+    - 5 System Design
+    - 6 AI Tooling and Workflow
+    - 10 Independent Operation
+    - 12 Client and Communication
+  reinforces:
+    - 2 SDLC and Engineering Practices
+    - 14 Aptitude
+  profile_evidence:
+    - 13 Cross-Domain and Business Exposure
+timeline_working_days: 14
+technologies_to_learn:
+  - The Software Development Lifecycle (SDLC)
+  - AI-driven SDLC and spec-driven development
+  - Requirements writing (SRS, functional requirements, acceptance criteria)
+  - Entity relationship modelling
+  - Diagramming (any tool, embedded so it displays inline with no separate app)
+  - Testing (test sheets, regression cases)
+  - Build and run cost estimation (any AI or token provider, any hosting provider)
+  - Directing a coding agent (Claude Code or equivalent)
+  - AI context management (project context file, specs, skills)
+  - Single-file HTML, CSS and JavaScript prototypes
+  - Git and GitHub (template repositories, commits, collaborator access)
+  - Loom screen recording
+certifications_required: []
+certifications_recommended:
+  - Anthropic Academy, Claude Code in Action (free)
+  - AWS Skill Builder, AWS Cloud Practitioner Essentials (free course)
+  - EF SET English test (free)
+required_artifacts:
+  per_engagement:
+    - context/scenario-N-name/spec.md
+    - docs/scenario-N-name/compilation.md
+    - src/scenario-N-name/mockup.html
+    - proof/scenario-N-name/ (at least two screenshots)
+  project:
+    - CLAUDE.md
+    - docs/ai-pipeline.md
+    - docs/reflection.md
+    - LEARNING_LOG.md
+    - SUBMISSION.md
+    - Loom walkthrough link, 8 minutes or less, covering all five engagements
+engagements:
+  - scenario-1-labline
+  - scenario-2-clausetrack
+  - scenario-3-claimgate
+  - scenario-4-coldchain
+  - scenario-5-payrun
+success_criteria: SUCCESS.md
+variants:
+  - "13.1"

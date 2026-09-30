@@ -1,6 +1,6 @@
-# Worked Example: LoanDesk (Engagement 1)
+# Worked Example: LoanDesk (Financial Services)
 
-This is a completed reference example, not a template to copy text from. It exists so you can see what "done" looks like before you write your own six. Match its structure, depth, and honesty, not its exact wording. Your own LoanDesk `compilation.md` should look like this in shape; your other six engagements follow the same shape in a different domain.
+This is a completed reference example, not a template to copy text from. It exists so you can see what "done" looks like before you write your own five. Match its structure, depth, and honesty, not its exact wording. Each of your engagements follows this same shape in a different domain.
 
 The matching mockup is at `examples/worked-example-loandesk/mockup.html`. Open it directly in a browser.
 
@@ -29,7 +29,7 @@ The matching mockup is at `examples/worked-example-loandesk/mockup.html`. Open i
 - FR5: On approval, the system generates a full amortization schedule (monthly principal, interest, and remaining balance) for the approved amount, term, and interest rate.
 - FR6: Every status change on an application (submitted, document received, reviewed, approved, rejected) is recorded in an audit trail with who did it and when.
 
-**Domain rule surfaced during requirements analysis, not stated in the original brief:** the brief only said "we do not want to lend to people who cannot pay it back." Asking the AI Instructor, acting as a stand-in domain expert, surfaced the standard microfinance affordability threshold (repayment should not exceed roughly 30 to 40% of stated monthly income) and the two-person approval separation (recommend versus decide) as a standard fraud and error control in small lending, not something the client would have thought to specify. Both became FR3 and FR4.
+**Domain rule surfaced during requirements analysis, not stated in the original brief:** the brief only said "we do not want to lend to people who cannot pay it back." Asking the AI assistant, acting as a stand-in domain expert, and then checking its answer against published microfinance lending guidance, surfaced the standard microfinance affordability threshold (repayment should not exceed roughly 30 to 40% of stated monthly income) and the two-person approval separation (recommend versus decide) as a standard fraud and error control in small lending, not something the client would have thought to specify. Both became FR3 and FR4.
 
 **Out of scope:** real identity verification against a government database, real credit bureau checks, real disbursement of funds, multi-currency support.
 
@@ -143,4 +143,4 @@ To take this from mockup to production: real authentication and role-based acces
 
 ## 7. Retrospective
 
-What went well: surfacing the affordability rule and the two-person approval rule as unstated domain requirements before building anything, rather than discovering them mid-build. What I would do differently: I should have written the test sheet's role-separation case before building, since it caught a real defect that a test-first approach would have prevented rather than found afterward. This is the first of seven engagements, so there is no prior engagement to compare pacing against; that comparison starts in Engagement 2's retrospective.
+What went well: surfacing the affordability rule and the two-person approval rule as unstated domain requirements before building anything, rather than discovering them mid-build. What I would do differently: I should have written the test sheet's role-separation case before building, since it caught a real defect that a test-first approach would have prevented rather than found afterward. In a real run this retrospective would also compare pacing and quality with the previous engagement; from your Engagement 2 onward, yours should.
